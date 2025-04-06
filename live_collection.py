@@ -28,8 +28,8 @@ def main():
         prev_time = time.time()
 
         with mp_hands.Hands(
-                model_complexity=0,
-                max_num_hands=2,
+                model_complexity=1,
+                max_num_hands=1,
                 min_detection_confidence=config.min_detection_confidence,
                 min_tracking_confidence=config.min_tracking_confidence) as hands:
             while cap.isOpened():

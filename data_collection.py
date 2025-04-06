@@ -56,8 +56,8 @@ def collect_keypoint_values_to_csv():
         cap.set(cv.CAP_PROP_FRAME_HEIGHT, config.height)
 
         with mp_hands.Hands(
-                model_complexity=0,
-                max_num_hands=2,
+                model_complexity=1,
+                max_num_hands=1,
                 min_detection_confidence=config.min_detection_confidence,
                 min_tracking_confidence=config.min_tracking_confidence) as hands:
 
